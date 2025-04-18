@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Colunas Lado a Lado</title>
+  <style>
+    .container { /* diz que os elementos filhos do .container vão ficar em linha, um do lado do outro.*/
+      display: flex; /* usa flexbox para alinhar as colunas lado a lado */
+      gap: 20px; /* espaçamento entre as colunas */
+    }
+
+    .coluna { 
+      flex: 1; /* cada coluna ocupa o mesmo espaço */
+      padding: 20px; /* espaçamento interno */
+      background-color: #6e6dbd4f; /* cor de fundo das colunas */
+      border: 1px solid #ffffffc4; /* borda das colunas */
+      border-radius: 50px; /* borda arredondada */
+      box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.1); /* sombra para dar profundidade */
+    }
+    
+    .centralizado {
+        text-align: center; /* centraliza o texto dentro da coluna */
+        font-size: 20px; /* tamanho da fonte */
+        font-family: Arial, Helvetica, sans-serif; /* tipo de fonte */
+        margin-top: 20px; /* margem superior */
+        margin-bottom: 20px; /* margem inferior */
+        padding: 1px; /* espaçamento interno */
+
+    }
+  </style>
+</head>
+<body>
+    <div class="centralizado">
+        <h1>Estrutura básica</h1>
+        <p>Texto centralizado.</p>
+    </div>
+  <div class="container"> <!-- classe container para as colunas ficarem alinhadas -->
+    <div class="coluna"> <!-- Classe coluna para criar o background e alinhamento -->
+      <h2>Coluna 1</h2> <!-- Primeira coluna e seu conteúdo-->
+      <p>Texto da primeira coluna. Aqui vai seu conteúdo.</p>  <!-- conteúdo da primeira coluna -->
+    </div>
+    <div class="coluna"> 
+      <h2>Coluna 2</h2> <!-- Segunda coluna -->
+      <p>Texto da segunda <br> coluna. Aqui vai mais conteúdo.</p> <!-- Conteúdo da segunda coluna -->
+    <!-- <br> serve para quebrar a linha no meio da linguagem. -->
+    </div>
+  </div>
+  <div class="centralizado">
+  <div class="container">
+    <ol type="I">
+      <li>Curso técnico</li>
+      <li>Cursos seila mano</li>
+      <li>Praticando mais</li> <!-- lista numerada --> <!-- <li> serve para fazer uma lista enumerada.-->
+    </ol>
+    <ol>
+      <li>Mais uma listinha estranha</li>
+    </ol>
+    <ol>
+      <li>aaaa</li>
+    </ol>
+    <ol>
+      <li>aaaa</li>
+  </div>
+  </div>
+  
+</body>
+</html>
